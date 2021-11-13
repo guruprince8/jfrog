@@ -1,0 +1,9 @@
+/** link */
+https://computingforgeeks.com/how-to-install-jfrog-artifactory-on-ubuntu-linux/
+wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | sudo apt-key add -
+echo "deb https://jfrog.bintray.com/artifactory-debs focal main" | sudo tee /etc/apt/sources.list.d/jfrog.list
+sudo apt update
+sudo apt install jfrog-artifactory-oss
+sudo systemctl start artifactory.service
+sudo systemctl enable artifactory.service
+systemctl status artifactory.service

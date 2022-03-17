@@ -12,3 +12,6 @@ sudo systemctl enable artifactory.service
 systemctl status artifactory.service
 Step 4: Access Artifactory Web Interface
 http://SERVERIP_OR_DOMAIN:8081/artifactory
+
+-- un install
+sudo apt remove jfrog-artifactory-oss
